@@ -12,8 +12,8 @@ def call(Map pipelineParams){
             }
             stage('compilando') {
                 steps {
-                    echo 'Mvn clean installl ...............'
                      script {
+                        echo 'Mvn clean installl ...............'
                         dockerLib.construyendo(nombreRepo: "matias")
                     }                    
                 }
