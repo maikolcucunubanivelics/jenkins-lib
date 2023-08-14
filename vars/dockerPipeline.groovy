@@ -20,7 +20,7 @@ def call(Map pipelineParams){
             }
             stage('desplegando') {
                 steps {
-                script {
+                    script {
                         dockerLib.publicando(version: "1.0")
                     }
                 }
